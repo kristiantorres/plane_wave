@@ -1,0 +1,6 @@
+*.ipynb
+planewavesolver.py
+*marmousi_vp_*
+__pycache__
+
+!Plane_wave_acoustic.ipynb
