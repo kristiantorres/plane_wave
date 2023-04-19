@@ -28,7 +28,7 @@ class PlaneWaveSolver(AcousticWaveSolver):
 
             # Forward modeling and save shot gathers
             d = super().forward(*args, src=src, **kwargs)[0]
-            shots.append(d)
+            shots.append(d.data)
 
         return shots 
     
