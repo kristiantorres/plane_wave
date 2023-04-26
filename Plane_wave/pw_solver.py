@@ -144,7 +144,7 @@ def trim_time(shot, geometry, model, p, x0):
 
     init_t, idx = find_nearest(geometry.time_axis.time_values, init_delta_t)
 
-    trim_shot = np.zeros(shot, dtype='float32')
+    trim_shot = np.zeros(shot.shape, dtype='float32')
     trim_shot[:-idx, :] = shot[idx:, :]
 
     return trim_shot, init_t, idx
